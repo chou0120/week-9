@@ -1,19 +1,15 @@
 <template>
-  <div>
+    <div>
      <h1>{{ msg }}</h1>
     <div class="box">
-        <img class="img1" :src="img">
-        <div class="para1">
+        <img class="img" :src="img">
+        <div class="para">
+       
+        <p>{{ paragraph }}</p>
         <p>{{ paragraph }}</p>
        </div>
     </div>
-    <div class="box">
-       <div class="para2">
-        <p>{{ paragraph }}</p>
-       </div>
-       <img class="img2" :src="img">
     </div>
-  </div>
 </template>
 
 <script>
@@ -22,7 +18,7 @@ export default {
     data() {
 return  {
         img:'https://placekitten.com/300/300',
-        msg: 'Welcome to My About Page',
+        msg: 'Welcome to My App',
         paragraph: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus numquam debitis dolorem expedita ad animi modi necessitatibus sequi fugit, neque fugiat sunt doloremque rerum minus, praesentium atque adipisci aspernatur officiis?',
 
     }
@@ -34,23 +30,14 @@ return  {
     width:80%;
     margin:0 auto;
     display: flex;
-    margin-bottom: 2rem;
     
 }
-.img1 {
+.img {
  float:left;
  margin-right: 2rem;
 }
-.img2 {
- float: right;
- margin-left: 2rem;
-}
-.para1{
+.para{
     float:right;
     text-align: left;
-}
-.para2{
-    float:left;
-    text-align: right;
 }
 </style>
